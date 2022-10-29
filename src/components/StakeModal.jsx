@@ -30,16 +30,12 @@ const StakeModal = (props) => {
                     Staking Information
                   </Card.Title>
                   <Card.Text>
-                    <p>
-                      <b>Staking Length:</b>
-                      <br></br>
-                      {stakingLength}
-                    </p>
-                    <p>
-                      <b>Staking Percent:</b>
-                      <br></br>
-                      {stakingPercent}
-                    </p>
+                    <b>Staking Length:</b>
+                    <br></br>
+                    {stakingLength}
+                    <b>Staking Percent:</b>
+                    <br></br>
+                    {stakingPercent}
                   </Card.Text>
                 </Card.Body>
               </Card>

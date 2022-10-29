@@ -15,6 +15,7 @@ const NavBar = (props) => {
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
+          TESTNET
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               {props.isConnected() ? (

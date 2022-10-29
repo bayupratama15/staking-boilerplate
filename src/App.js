@@ -15,7 +15,7 @@ import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
 import Badge from "react-bootstrap/Badge";
 
-const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const CONTRACT_ADDRESS = "0x47bA88CfD537B59c2F381649Ad0De8e87Ba4d686";
 
 function App() {
   // general
@@ -155,31 +155,30 @@ function App() {
                 }}
               >
                 <Card.Body>
-                  <Card.Title>Staking Information</Card.Title>
-                  <Card.Text>
-                    <Table hover responsive>
-                      <thead>
-                        <tr>
-                          <th>Periode</th>
-                          <th>APY %</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>30 Days</td>
-                          <td>7%</td>
-                        </tr>
-                        <tr>
-                          <td>90 Days</td>
-                          <td>10%</td>
-                        </tr>
-                        <tr>
-                          <td>180 Days</td>
-                          <td>12%</td>
-                        </tr>
-                      </tbody>
-                    </Table>
-                  </Card.Text>
+                  <Card.Title>Staking Information Reward 1 Year</Card.Title>
+
+                  <Table hover responsive>
+                    <thead>
+                      <tr>
+                        <th>Periode</th>
+                        <th>APY %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>7 Days</td>
+                        <td>7%</td>
+                      </tr>
+                      <tr>
+                        <td>14 Days</td>
+                        <td>10%</td>
+                      </tr>
+                      <tr>
+                        <td>30 Days</td>
+                        <td>12%</td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Card.Body>
               </Card>
             </Col>
@@ -200,7 +199,33 @@ function App() {
                   <Row>
                     <Col md="4">
                       <Card
-                        onClick={() => openStakingModal(30, "7%")}
+                        onClick={() => openStakingModal(7, "7%")}
+                        className="card-hover"
+                      >
+                        <Card.Body>
+                          <span style={{ fontSize: "38px" }}>
+                            <Coin />
+                          </span>
+                          <Card.Title>7 Days</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col md="4">
+                      <Card
+                        onClick={() => openStakingModal(14, "10%")}
+                        className="card-hover"
+                      >
+                        <Card.Body>
+                          <span style={{ fontSize: "38px" }}>
+                            <Coin />
+                          </span>
+                          <Card.Title>14 Days</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col md="4">
+                      <Card
+                        onClick={() => openStakingModal(30, "12%")}
                         className="card-hover"
                       >
                         <Card.Body>
@@ -208,32 +233,6 @@ function App() {
                             <Coin />
                           </span>
                           <Card.Title>30 Days</Card.Title>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                    <Col md="4">
-                      <Card
-                        onClick={() => openStakingModal(90, "10%")}
-                        className="card-hover"
-                      >
-                        <Card.Body>
-                          <span style={{ fontSize: "38px" }}>
-                            <Coin />
-                          </span>
-                          <Card.Title>90 Days</Card.Title>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                    <Col md="4">
-                      <Card
-                        onClick={() => openStakingModal(180, "12%")}
-                        className="card-hover"
-                      >
-                        <Card.Body>
-                          <span style={{ fontSize: "38px" }}>
-                            <Coin />
-                          </span>
-                          <Card.Title>180 Days</Card.Title>
                         </Card.Body>
                       </Card>
                     </Col>
