@@ -15,7 +15,7 @@ import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
 import Badge from "react-bootstrap/Badge";
 
-const CONTRACT_ADDRESS = "0x47bA88CfD537B59c2F381649Ad0De8e87Ba4d686";
+const CONTRACT_ADDRESS = "0x3463AFB647F6d5313B65B83be2f8944A60f893a8";
 
 function App() {
   // general
